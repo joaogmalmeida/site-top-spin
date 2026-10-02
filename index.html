@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopSpin | Loja de Tênis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="login" class="login">
+    <form id="formLogin" class="login-box">
+      <div class="marca"><span class="logo">TS</span><div><h1>TopSpin</h1><small>Loja de Tênis</small></div></div>
+      <h2>Entrar</h2>
+      <p>Digite qualquer usuário e senha para acessar.</p>
+      <input id="usuario" type="text" placeholder="Usuário" required>
+      <input id="senha" type="password" placeholder="Senha" required>
+      <button type="submit">Entrar na loja</button>
+    </form>
+  </div>
+
+  <header>
+    <div class="container cabecalho">
+      <a href="#inicio" class="marca">
+        <span class="logo">TS</span>
+        <div><h1>TopSpin</h1><small>Loja de Tênis</small></div>
+      </a>
+
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#suporte">Suporte</a>
+      </nav>
+
+      <button id="abrirCarrinho" class="carrinho-btn">
+        Carrinho (<span id="quantidade">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="destaque">Tudo para o seu jogo</span>
+          <h2>Entre em quadra com a TopSpin</h2>
+          <p> Acessórios para quem gosta de tênis.</p>
+          <a href="#produtos" class="botao">Ver produtos</a>
+        </div>
+        <div class="hero-ilustracao">
+          <div class="bola"></div>
+          <div class="raquete">
+            <div class="raquete-cabeca"></div>
+            <div class="raquete-cabo"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+      <div class="container">
+        <div class="titulo">
+          <span>Loja</span>
+          <h2>Produtos em destaque</h2>
+          <p>Escolha uma categoria ou veja todos os produtos.</p>
+        </div>
+
+        <div class="filtros">
+          <button class="filtro ativo" data-cat="todos">Todos</button>
+          <button class="filtro" data-cat="calcados">Calçados</button>
+          <button class="filtro" data-cat="raquetes">Raquetes</button>
+          <button class="filtro" data-cat="bolas">Bolas</button>
+          <button class="filtro" data-cat="bolsas">Mochilas e raqueteiras</button>
+          <button class="filtro" data-cat="roupas">Roupas</button>
+        </div>
+
+        <div class="grid">
+          <article class="produto" data-cat="calcados">
+            <img src="https://imgnike-a.akamaihd.net/768x768/110096NX.jpg" alt="Calçado esportivo">
+            <div class="produto-info">
+              <small>Calçados</small><h3>Tênis Nike Challenge Pro Premium Saibro Masculino</h3>
+              <p>Calçado com boa aderência para quadras de saibro.</p>
+              <strong>R$ 699,00</strong>
+              <button class="adicionar" data-nome="TopSpin Clay Pro" data-preco="449.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="produto" data-cat="raquetes">
+            <img src="https://http2.mlstatic.com/D_Q_NP_804409-MLA95833763865_102025-F.webp"  alt="Raquete de tênis">
+            <div class="produto-info">
+              <small>Raquetes</small><h3>Raquete de tênis Yonex Ezone 100 2025</h3>
+              <p>Equilíbrio entre controle, potência e conforto.</p>
+              <strong>R$ 2.799,90</strong>
+              <button class="adicionar" data-nome="Raquete Power 100" data-preco="899.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="produto" data-cat="bolas">
+            <img src=https://th.bing.com/th/id/OIP.ZyqGtdhfHBCGUSn1KV5dVAHaHa?w=185&h=186&c=7&r=0&o=7&pid=1.7&rm=3 alt="Bolas de tênis">
+            <div class="produto-info">
+              <small>Bolas</small><h3>Bola de Tênis Wilson Championship Extra Duty</h3>
+              <p>Tubo com 3 bolas para treinos e partidas.</p>
+              <strong>R$ 59,90</strong>
+              <button class="adicionar" data-nome="Bolas Championship" data-preco="59.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="produto" data-cat="bolsas">
+            <img src=https://tse1.mm.bing.net/th/id/OIP.bR0z56Ghvk0v9qWfVempCAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3 alt="Mochila esportiva">
+            <div class="produto-info">
+              <small>Mochilas</small><h3>Mochila de Tênis Wilson</h3>
+              <p>Espaço para acessórios, roupas e itens pessoais.</p>
+              <strong>R$ 239,90</strong>
+              <button class="adicionar" data-nome="Mochila Court" data-preco="239.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="produto" data-cat="bolsas">
+            <img src="https://images.tcdn.com.br/img/img_prod/589314/raqueteira_babolat_pure_aero_x12_preto_e_amarelo_2023_6545_5_4b5870608a99094b14a67d8d904c470e_20240515181128.png" alt="Raqueteira esportiva">
+            <div class="produto-info">
+              <small>Raqueteiras</small><h3>Raqueteira Babolat Pure Aero 6</h3>
+              <strong>R$ 1.159,90</strong>
+              <button class="adicionar" data-nome="Raqueteira Match 6" data-preco="329.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="produto" data-cat="roupas">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.K63U3Pc5YWnaMGcqak3ATgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Camisa esportiva">
+            <div class="produto-info">
+              <small>Camisas</small><h3>Camisa Nike </h3>
+              <p>Tecido leve e confortável para treinos e partidas.</p>
+              <strong>R$ 249,90</strong>
+              <button class="adicionar" data-nome="Camisa Performance" data-preco="119.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+
+          <article class="produto" data-cat="roupas">
+            <img src="https://th.bing.com/th/id/OIP.d0tDRwcQglB-z1JNY5y4AAHaHa?w=186&h=186&c=7&r=0&o=7&pid=1.7&rm=3" alt="Meias esportivas">
+            <div class="produto-info">
+              <small>Meias</small><h3>Kit Meias Nike</h3>
+              <p>Kit com 3 pares de meias esportivas.</p>
+              <strong>R$ 109,90</strong>
+              <button class="adicionar" data-nome="Kit Meias Court" data-preco="69.90">Adicionar ao carrinho</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="suporte" class="suporte">
+      <div class="container suporte-grid">
+        <div>
+          <span>Precisa de ajuda?</span>
+          <h2>Fale com o suporte TopSpin</h2>
+          <p>Tire dúvidas sobre produtos, pedidos ou equipamentos.</p>
+        </div>
+        <a class="botao botao-claro" href="https://wa.me/5583987833775">Entrar em contato</a>
+      </div>
+    </section>
+  </main>
+
+  <aside id="painelCarrinho" class="painel">
+    <div class="painel-topo">
+      <h2>Seu carrinho</h2>
+      <button id="fecharCarrinho" class="fechar">&times;</button>
+    </div>
+    <div id="itensCarrinho" class="itens"><p>Seu carrinho está vazio.</p></div>
+    <div class="total"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+    <button id="finalizar" class="botao">Finalizar compra</button>
+  </aside>
+  <div id="fundo" class="fundo"></div>
+
+  <footer>
+    <div class="container rodape">
+      <div><strong>TopSpin</strong><p>Equipamentos e acessórios para tênis.</p></div>
+      <p>© 2026 TopSpin. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
